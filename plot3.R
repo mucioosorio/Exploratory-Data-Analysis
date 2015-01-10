@@ -4,7 +4,7 @@
 datos <- subset(read.csv("household_power_consumption.txt",header = TRUE,sep =";",na.strings="?"),
                 Date == "2/2/2007"| Date=="1/2/2007")
 
-## Extraer la columna Date y Time, unirlas y agregarlas al archivo de datos 
+## Extraer la columna Date y Time, unirlas y agregarlas al archivo de datos  
 ## (Extracting Date and Time column, join and add to the data file)
 
 datos$Date <- as.Date(datos$Date, format="%d/%m/%Y")
